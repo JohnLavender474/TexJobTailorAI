@@ -59,3 +59,14 @@ For example, this might be the following.
 ./run.sh --analysis --client openai-gpt-4 --original /home/johnlavender/Desktop/John-Lavender-resume.tex --jobPosting /home/johnlavender/Desktop/JobPosting.txt --output /home/johnlavender/Desktop/John-Lavender-resume
 ```
 
+Notice that for the _output_ argument value, no file extension is provided. This is because the program will write multiple
+files that have the same name but that each have a different extension. 
+
+If you have run `run.sh` before, then there will be a `build` directory at the root of the project. If you make changes
+to the code, then you will most likely want to trigger a rebuild of the JAR by deleting the entire `build` directory 
+before running `run.sh`.
+
+## Supporting other AI clients
+
+Currently, the project supports only OpenAI's GPT-4 model. To add support for other clients, you will need to fork this
+project and add the logic to support them.
