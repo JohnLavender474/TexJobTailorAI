@@ -39,7 +39,10 @@ class TexJobTailorAI {
 
             val analysis = runBlocking { client.prompt(content) }
 
-            print("AI analysis:\n---\n$analysis")
+            val outputAnalysisPath = "${args.output}-analysis.txt"
+            File(outputAnalysisPath).writeText(analysis)
+
+            print("Analysis written to $outputAnalysisPath")
         }
     }
 }
