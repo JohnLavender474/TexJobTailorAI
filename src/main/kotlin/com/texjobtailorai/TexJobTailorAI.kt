@@ -4,6 +4,7 @@ import com.texjobtailorai.analysis.DEFAULT_ANALYSIS_PROMPT
 import com.texjobtailorai.cl.CommandLineArgsBuilder
 import com.texjobtailorai.cleanup.OutputTexCleaner
 import com.texjobtailorai.clients.AiClientProvider
+import com.texjobtailorai.coverletter.DEFAULT_COVER_LETTER_PROMPT
 import com.texjobtailorai.tailorer.TexJobPostingTailorImpl
 import kotlinx.coroutines.runBlocking
 import java.io.File
@@ -43,6 +44,18 @@ class TexJobTailorAI {
             File(outputAnalysisPath).writeText(analysis)
 
             print("Analysis written to $outputAnalysisPath")
+        }
+
+        if (args.coverLetter) {
+            val content = DEFAULT_COVER_LETTER_PROMPT
+                .replace("{jobPosting}", jobPostingContent)
+                .replace("{resume}", cleanTailoredContent)
+
+            val coverLetter = runBlocking { client.prompt(content) }
+
+            File(args.coverLetterDest).writeText(coverLetter)
+
+            print("Cover letter written to ${args.coverLetterDest}")
         }
     }
 }

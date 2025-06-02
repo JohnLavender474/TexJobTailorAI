@@ -7,10 +7,9 @@ import kotlin.system.exitProcess
 class CommandLineArgsBuilder {
 
     fun build(args: Array<String>): CommandLineArgs {
+        print("Args: ${args.joinToString(", ")}")
         val clArgs = CommandLineArgs()
-
         val jCommander = JCommander.newBuilder().addObject(clArgs).build()
-
         try {
             jCommander.parse(*args)
         } catch (e: ParameterException) {

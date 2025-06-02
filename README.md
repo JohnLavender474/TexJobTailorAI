@@ -51,12 +51,12 @@ OPENAI_TEMPERATURE=<temperature-here>
 After the `.env` file has been setup, you may run the following command.
 
 ```bash
-./run.sh --analysis --client <client> --original <path-to-original-resume-tex-file> --jobPosting <path-to-job-posting-txt-file> --output <output-file-name>
+./run.sh --client <client> --original <path-to-original-resume-tex-file> --jobPosting <path-to-job-posting-txt-file> --output <output-file-name> --analysis --coverLetter --coverLetterDest <destination-of-cover-letter>
 ```
 
 For example, this might be the following.
 ```bash
-./run.sh --analysis --client openai-gpt-4 --original /home/johnlavender/Desktop/John-Lavender-resume.tex --jobPosting /home/johnlavender/Desktop/JobPosting.txt --output /home/johnlavender/Desktop/John-Lavender-resume
+./run.sh --client openai-gpt-4 --original /home/johnlavender/Documents/John-Lavender-resume.tex --jobPosting /home/johnlavender/Desktop/JobPosting.txt --output /home/johnlavender/Desktop/John-Lavender-resume --analysis --coverLetter --coverLetterDest /home/johnlavender/Desktop/CoverLetter.txt
 ```
 
 Notice that for the _output_ argument value, no file extension is provided. This is because the program will write multiple

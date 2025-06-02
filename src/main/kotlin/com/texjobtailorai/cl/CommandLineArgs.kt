@@ -38,4 +38,18 @@ class CommandLineArgs {
         required = false
     )
     var analysis: Boolean = false
+
+    @Parameter(
+        names = ["--coverLetter"],
+        description = "Get a cover letter based on the job posting and new resume. Defaults to false.",
+        required = false
+    )
+    var coverLetter: Boolean = false
+
+    @Parameter(
+        names = ["--coverLetterDest"],
+        description = "The file path for the cover letter. Doesn't do anything if \"--coverLetter\" is false.",
+        required = false
+    )
+    var coverLetterDest: String = ""
 }
