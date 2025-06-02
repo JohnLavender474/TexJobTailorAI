@@ -1,4 +1,4 @@
-package com.textjobtailorai.clients
+package com.texjobtailorai.clients
 
 import com.aallam.openai.api.chat.ChatCompletionRequest
 import com.aallam.openai.api.chat.ChatMessage
@@ -6,7 +6,7 @@ import com.aallam.openai.api.chat.ChatRole
 import com.aallam.openai.api.http.Timeout
 import com.aallam.openai.api.model.ModelId
 import com.aallam.openai.client.OpenAI
-import com.textjobtailorai.config.EnvProvider
+import com.texjobtailorai.config.EnvProvider
 import kotlin.time.Duration.Companion.minutes
 import kotlin.time.Duration.Companion.seconds
 

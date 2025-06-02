@@ -1,4 +1,4 @@
-package com.textjobtailorai.utils
+package com.texjobtailorai.utils
 
 interface Provider<T, V> {
 

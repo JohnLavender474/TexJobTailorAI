@@ -1,4 +1,4 @@
-package com.textjobtailorai.cleanup
+package com.texjobtailorai.cleanup
 
 class OutputTexCleaner {
 

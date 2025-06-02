@@ -1,7 +1,7 @@
-package com.textjobtailorai.clients
+package com.texjobtailorai.clients
 
-import com.textjobtailorai.config.EnvProvider
-import com.textjobtailorai.utils.Provider
+import com.texjobtailorai.config.EnvProvider
+import com.texjobtailorai.utils.Provider
 
 class AiClientProvider : Provider<String, AiClient?> {
 

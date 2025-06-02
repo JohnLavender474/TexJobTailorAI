@@ -1,4 +1,4 @@
-package com.textjobtailorai.cl
+package com.texjobtailorai.cl
 
 import com.beust.jcommander.JCommander
 import com.beust.jcommander.ParameterException

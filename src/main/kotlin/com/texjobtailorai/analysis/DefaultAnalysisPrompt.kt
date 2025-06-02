@@ -1,4 +1,4 @@
-package com.textjobtailorai.analysis
+package com.texjobtailorai.analysis
 
 val DEFAULT_ANALYSIS_PROMPT = """
     I have two versions of my resume and a job posting. The first version of the resume is the 

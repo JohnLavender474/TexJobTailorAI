@@ -1,4 +1,4 @@
-package com.textjobtailorai.tailorer
+package com.texjobtailorai.tailorer
 
 interface ITexJobPostingTailor {
 

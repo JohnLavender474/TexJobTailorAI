@@ -1,4 +1,4 @@
-package com.textjobtailorai.tailorer
+package com.texjobtailorai.tailorer
 
 val DEFAULT_TEX_TAILOR_PROMPT = """
     I need you to help tailor my resume to better match a job posting. Here are the instructions:

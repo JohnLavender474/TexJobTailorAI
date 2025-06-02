@@ -1,4 +1,4 @@
-package com.textjobtailorai.cl
+package com.texjobtailorai.cl
 
 import com.beust.jcommander.Parameter
 

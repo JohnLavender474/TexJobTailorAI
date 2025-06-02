@@ -1,11 +1,10 @@
-package com.textjobtailorai
+package com.texjobtailorai
 
-import com.textjobtailorai.analysis.DEFAULT_ANALYSIS_PROMPT
-import com.textjobtailorai.cl.CommandLineArgsBuilder
-import com.textjobtailorai.cleanup.OutputTexCleaner
-import com.textjobtailorai.clients.AiClientProvider
-import com.textjobtailorai.tailorer.DEFAULT_TEX_TAILOR_PROMPT
-import com.textjobtailorai.tailorer.TexJobPostingTailorImpl
+import com.texjobtailorai.analysis.DEFAULT_ANALYSIS_PROMPT
+import com.texjobtailorai.cl.CommandLineArgsBuilder
+import com.texjobtailorai.cleanup.OutputTexCleaner
+import com.texjobtailorai.clients.AiClientProvider
+import com.texjobtailorai.tailorer.TexJobPostingTailorImpl
 import kotlinx.coroutines.runBlocking
 import java.io.File
 

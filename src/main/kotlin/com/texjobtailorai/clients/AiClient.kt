@@ -1,4 +1,4 @@
-package com.textjobtailorai.clients
+package com.texjobtailorai.clients
 
 interface AiClient {
 

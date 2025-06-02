@@ -1,7 +1,7 @@
-package com.textjobtailorai.tailorer
+package com.texjobtailorai.tailorer
 
 import com.aallam.openai.api.BetaOpenAI
-import com.textjobtailorai.clients.AiClient
+import com.texjobtailorai.clients.AiClient
 
 @OptIn(BetaOpenAI::class)
 class TexJobPostingTailorImpl(private val client: AiClient) : ITexJobPostingTailor {
